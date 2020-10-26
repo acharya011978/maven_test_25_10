@@ -2,8 +2,19 @@ package clinic.programming.training;
 
 import java.util.*; 
 import java.util.Scanner; 
+import java.util.List;
+import java.util.ArrayList;
 
 public class Application {
+
+	public void greet(){
+	List<String> greetings = new ArrayList<>();
+	greetings.add ("Hello, we are adding ArrayList here");
+	
+	for (String greeting : greetings){
+		System.out.println("Greetings : " + greeting);
+					 }
+			   }
 
 
 
@@ -28,6 +39,7 @@ System.out.println ("Starting Application");
 		p.setOrigin(input); 
 		p.palli();
 		Application app = new Application();
+		app.greet();
     }
 }
 
