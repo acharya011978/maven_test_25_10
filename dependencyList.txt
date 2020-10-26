@@ -1,0 +1,17 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< clinic.programmming:maven_test_25_10 >----------------
+[INFO] Building maven_test_25_10 1.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:list (default-cli) @ maven_test_25_10 ---
+[INFO] 
+[INFO] The following files have been resolved:
+[INFO]    none
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.099 s
+[INFO] Finished at: 2020-10-26T13:59:05Z
+[INFO] ------------------------------------------------------------------------

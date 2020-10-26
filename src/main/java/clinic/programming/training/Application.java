@@ -4,6 +4,7 @@ import java.util.*;
 import java.util.Scanner; 
 import java.util.List;
 import java.util.ArrayList;
+import org.apache.commons.lang3.StringUtils;
 
 public class Application {
 
@@ -16,19 +17,20 @@ public class Application {
 					 }
 			   }
 
-
+public int countWords (String words) {
+	String[] separateWords=StringUtils.split(words, ' ');
+	return (separateWords == null)? 0 : separateWords.length;
+				     }
 
   public Application() { 
-System.out.println ("\n \n Good Job. Keep it up !!!  \n Ok See you later ! \n Ba Bye !!!");
-		    }
+	System.out.println ("\n \n Constructor !Good Job. Keep it up !!!  \n Ok See you later ! \n Ba Bye !!!");
+		       }
 // method main(): ALWAYS the APPLICATION entry point
+
           public static void main (String[] args) {
 
-
-
-System.out.println ("Starting Application");
-	  
-		String input, name;
+		System.out.println ("Starting Application");
+	  	String input, name;
 		Scanner in = new Scanner(System.in); 
 		System.out.println("Would you don't mind to tell your name: " + "\t" ); 	
 		name = in.nextLine(); 
@@ -39,7 +41,11 @@ System.out.println ("Starting Application");
 		p.setOrigin(input); 
 		p.palli();
 		Application app = new Application();
+		int count = app.countWords("I have four words");
 		app.greet();
+
+		System.out.println("Word Count: " + count);
+
     }
 }
 
